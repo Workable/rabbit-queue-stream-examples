@@ -12,8 +12,8 @@ const rabbit = require('../../connect');
     for await (const line of file) {
       console.log(line);
       // throw new Error('foo');
-      // await new Promise(r => setTimeout(r, 2000));
-      // file.emit(rabbit.constructor.STOP_STREAM);
+      await new Promise(r => setTimeout(r, 100));
+      file.emit(rabbit.constructor.STOP_STREAM);
     }
 
     console.log(`took ${+new Date() - +date} ms`);
