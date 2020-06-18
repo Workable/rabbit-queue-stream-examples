@@ -1,0 +1,2 @@
+./rabbitmqAdmin -f tsv -q list queues name > q.txt
+while read -r name; do rabbitmqAdmin -q delete queue name="${name}"; done < q.txt
