@@ -1,4 +1,4 @@
-const connection = require('../connect');
+const connection = require('../../connect');
 const rabbitQueue = require('rabbit-queue');
 const fs = require('fs');
 const readline = require('readline');
