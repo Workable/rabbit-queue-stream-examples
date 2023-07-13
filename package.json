@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rabbit-queue": "^5.0.0"
+    "rabbit-queue": "^5.5.0"
   }
 }
